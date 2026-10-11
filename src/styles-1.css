@@ -50,3 +50,13 @@
  #oto-mock.tablet .oto-basic-mini-path{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:18px}
  @media(max-width:850px){#oto-mock .oto-basic-mini-path{display:flex;gap:5px;flex-wrap:wrap;margin:0 0 18px}#oto-mock .oto-basic-mini-path .oto-basic-step{padding:7px 9px;background:var(--p-tint)}#oto-mock .oto-basic-mini-path .oto-basic-step.active{background:var(--p-soft)}#oto-mock .oto-ref-columns{grid-template-columns:minmax(0,1fr)}#oto-mock .oto-ref-note{margin-top:0}}
  @media(max-width:600px){#oto-mock .oto-modebar{gap:3px;margin-bottom:23px}#oto-mock .oto-modebar button{padding:9px 10px;font-size:12px}#oto-mock .oto-basic-intro{font-size:13px}#oto-mock .oto-chart-example{padding:15px 12px}#oto-mock .oto-chart-table{font-size:12px}#oto-mock .oto-chart-table button{min-width:40px;padding:9px 3px}#oto-mock .oto-inline-chart{padding-left:10px;padding-right:10px}#oto-mock .oto-basic-mini-path .oto-basic-step{font-size:11px;padding:7px 6px;gap:5px}#oto-mock .oto-basic-mini-path .oto-basic-step span{width:20px;height:20px}}
+
+ #oto-mock .oto-practice-path{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 24px}
+ #oto-mock .oto-practice-path li{display:flex;align-items:center;gap:8px;padding:9px 12px;min-height:44px;border:1px solid var(--p-line);border-radius:10px;background:var(--p-paper);font-size:12px;color:var(--p-muted)}
+ #oto-mock .oto-practice-path li[aria-current="step"]{background:var(--p-soft);border-color:var(--p-green);color:var(--p-green);font-weight:600}
+ #oto-mock .oto-practice-number{display:grid;place-items:center;flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--p-tint);font-variant-numeric:tabular-nums}
+ #oto-mock [aria-current="step"] .oto-practice-number{background:var(--p-green);color:var(--p-on-green)}
+ #oto-mock .oto-practice-path small{font-size:10px;white-space:nowrap}
+ #oto-mock .oto-practice-location{white-space:nowrap;color:var(--p-green)}
+ #oto-mock .oto-content .oto-topline{flex-wrap:wrap;gap:8px}
+ @media(max-width:600px){#oto-mock .oto-practice-path{gap:6px;margin-bottom:18px}#oto-mock .oto-practice-path li{padding:7px 9px;font-size:11px;gap:6px}}
