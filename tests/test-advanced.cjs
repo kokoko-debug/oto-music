@@ -27,4 +27,12 @@ assert.deepEqual(plain(T.restore(state)),plain(state));
 const bad=T.restore({active:'true',level:'fake',group:'fake',degree:9,quality:'major',selected:['<script>','C','C'],wrong:['missing','c:C:dim7','c:C:dim7'],correct:10,answered:2});
 assert.equal(bad.active,false);assert.equal(bad.level,'chromatic');assert.equal(bad.degree,null);assert.deepEqual(plain(bad.selected),['C']);assert.deepEqual(plain(bad.wrong),['c:C:dim7']);assert.equal(bad.correct,2);
 assert.equal(T.findQuestion('bad'),null);assert.throws(()=>T.chord('C','bad'));assert.throws(()=>T.parseRoot('C<script>'));
+// Each staff note has an explicit accidental: a natural cancels a previous sharp
+// even for two versions of the same letter on the same staff.
+const uiSource=fs.readFileSync(path.join(__dirname,'../src/advanced.js'),'utf8');
+const staffContext={s:{direction:'down',position:0},esc:text=>String(text)};
+vm.runInNewContext(uiSource.slice(uiSource.indexOf(' function staff('),uiSource.indexOf(' function correct('))+';this.draw=staff;',staffContext);
+const naturalUnison=intervals.find(q=>q.notes[0].key==='C'&&q.notes[1].key==='C#');
+const notation=staffContext.draw(naturalUnison);assert.ok(notation.includes('♮'));assert.ok(notation.includes('♯'));assert.ok(notation.includes('C#4からC4'));
+staffContext.s.direction='up';const highNotes=staffContext.draw({notes:[T.note(6),T.note(13)]});assert.ok(highNotes.includes('x1="133" x2="133" y1="70" y2="100"'));assert.ok(highNotes.includes('y1="28" y2="58"'));
 console.log(`PASS: ${intervalCount} spelled simple intervals; ${chordCount} chord spellings, seventh inversions, strict answers, seeded repetition, saved sessions and invalid data.`);
