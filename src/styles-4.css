@@ -1,3 +1,80 @@
 #oto-mock .oto-mark{font-size:27px;line-height:1}
 #oto-mock .oto-save-note{font-size:12px;color:var(--p-muted);margin:32px auto 0;max-width:780px}
 #oto-mock .oto-chart-caption summary{min-height:44px;padding:8px 0}
+
+/* Shared reading sizes and contrast, applied after every feature stylesheet. */
+#oto-mock .oto-app{--p-bg:light-dark(#f7f8f3,#202723);--p-ink:light-dark(#22352b,#f1f4ed);--p-muted:light-dark(#4d5c52,#c2cec3);--p-line:light-dark(#ced7cc,#526357);--p-soft:light-dark(#eaf1e5,#354637);--p-tint:light-dark(#eff1e9,#30382f);font-family:"BIZ UDPGothic","Yu Gothic UI","Hiragino Sans","Meiryo",system-ui,sans-serif;font-size:17px;line-height:1.75}
+#oto-mock .oto-shell{grid-template-columns:184px minmax(0,1fr)}
+#oto-mock .oto-brand strong{font-size:22px}
+#oto-mock .oto-brand small,#oto-mock .oto-motto,#oto-mock .oto-nav>small,#oto-mock .oto-course small{font-size:13px}
+#oto-mock .oto-nav-btn{font-size:16px;min-height:48px}
+#oto-mock .oto-course b{font-size:15px;font-weight:600}
+#oto-mock .oto-modebar button{font-size:15px;min-height:48px}
+#oto-mock .oto-learning,#oto-mock [data-layout="guided"] .oto-content{max-width:840px}
+#oto-mock .oto-study-grid{grid-template-columns:minmax(0,1fr) 232px;gap:24px}
+#oto-mock .oto-practice-grid{grid-template-columns:minmax(0,1fr) 240px}
+#oto-mock .oto-title,#oto-mock [data-layout="guided"] .oto-title{font-size:27px;line-height:1.5;margin-bottom:12px}
+#oto-mock .oto-overline{font-size:13px;letter-spacing:.03em;margin-bottom:9px}
+#oto-mock .oto-subtitle,#oto-mock .oto-basic-intro,#oto-mock .oto-feedback p,#oto-mock .oto-hint,#oto-mock .oto-more,#oto-mock .oto-ref-reading{font-size:16px;line-height:1.8}
+#oto-mock .oto-basic-intro{max-width:640px}
+#oto-mock .oto-topline{font-size:14px}
+#oto-mock .oto-primary{font-size:16px;font-weight:600;min-height:48px;padding:12px 22px}
+#oto-mock .oto-secondary,#oto-mock .oto-tab,#oto-mock .oto-link{font-size:15px;min-height:46px}
+#oto-mock .oto-secondary{padding:9px 14px}
+#oto-mock .oto-tab{padding:8px 14px}
+#oto-mock .oto-link{color:var(--p-green)}
+#oto-mock .oto-option,#oto-mock [data-layout="guided"] .oto-option{font-size:17px;line-height:1.65;min-height:64px;padding:14px 13px;gap:11px}
+#oto-mock .oto-option small{font-size:13px}
+#oto-mock .oto-micro-title{font-size:20px;line-height:1.6}
+#oto-mock .oto-feedback h3,#oto-mock .oto-adv-feedback h3{font-size:19px}
+#oto-mock .oto-note b{font-family:inherit;font-size:36px;font-weight:600}
+#oto-mock .oto-note small{font-size:15px}
+#oto-mock .oto-guide{padding:22px 17px}
+#oto-mock .oto-guide h3{font-size:16px;line-height:1.6}
+#oto-mock .oto-guide p,#oto-mock .oto-guide .oto-basic-foot,#oto-mock .oto-guide .oto-guide-foot{font-size:14px;line-height:1.75}
+#oto-mock .oto-basic-step{font-size:14px;line-height:1.6;min-height:46px;gap:9px}
+#oto-mock .oto-basic-step span,#oto-mock .oto-practice-number{width:27px;height:27px;font-size:13px}
+#oto-mock .oto-practice-sidebar{padding:20px 14px}
+#oto-mock .oto-practice-sidebar h3{margin-bottom:12px}
+#oto-mock .oto-practice-sidebar p{font-size:14px;line-height:1.7}
+#oto-mock .oto-practice-sidebar .oto-practice-location{font-size:15px}
+#oto-mock .oto-practice-sidebar .oto-practice-path li{font-size:13px;line-height:1.6;min-height:46px;padding:8px 5px}
+#oto-mock .oto-practice-sidebar .oto-practice-all,#oto-mock .oto-practice-settings,#oto-mock .oto-practice-sidebar .oto-practice-concept,#oto-mock .oto-practice-sidebar .oto-practice-concept summary{font-size:13px}
+#oto-mock .oto-practice-settings button{font-size:14px;min-height:46px}
+#oto-mock .oto-practice-sidebar .oto-practice-concept p{font-size:14px}
+#oto-mock .oto-inline-chart summary,#oto-mock .oto-chart-caption,#oto-mock .oto-chart-caption summary,#oto-mock .oto-save-note,#oto-mock .oto-chat-row span,#oto-mock .oto-review-item p,#oto-mock .oto-empty small{font-size:14px;line-height:1.7}
+#oto-mock .oto-review-item b{font-size:19px;font-weight:600}
+#oto-mock .oto-chart-table{font-size:15px;line-height:1.65}
+#oto-mock .oto-chart-table th{font-weight:600}
+#oto-mock .oto-chart-table button{font-size:16px;min-height:46px}
+#oto-mock .oto-chord-table td,#oto-mock .oto-chord-table th{padding:10px 6px}
+#oto-mock .oto-chord-table th:first-child{width:auto;white-space:nowrap}
+#oto-mock .oto-chord-table th:last-child{width:auto}
+#oto-mock .oto-chart-example-head b{font-size:23px;font-weight:600}
+#oto-mock .oto-chart-example-head span,#oto-mock .oto-example-title,#oto-mock .oto-ref-note,#oto-mock .oto-note-letters span,#oto-mock .oto-spelling-note{font-size:14px}
+#oto-mock .oto-chart-pair{font-size:26px;font-weight:600}
+#oto-mock .oto-chord-identity small,#oto-mock .oto-origin-root,#oto-mock .oto-origin-pair small,#oto-mock .oto-origin-ruler small,#oto-mock .oto-octave-caption,#oto-mock .oto-chord-scroll-help{font-size:13px}
+#oto-mock .oto-ref-note b{font-size:16px}
+#oto-mock .oto-white,#oto-mock .oto-black{font-size:13px}
+#oto-mock .oto-piano{height:146px}
+#oto-mock .oto-black{height:88px}
+#oto-mock .oto-piano-caption{font-size:13px;line-height:1.7}
+#oto-mock .oto-key-role,#oto-mock .oto-chord-piano .oto-key-role{font-size:11px}
+#oto-mock .oto-key-root-reading{font-size:10px}
+#oto-mock .oto-chord-piano .oto-white,#oto-mock .oto-chord-piano .oto-black{font-size:13px}
+#oto-mock .oto-staff line{opacity:.72}
+#oto-mock [data-chord-table-root]{background:var(--p-paper);font-size:16px}
+#oto-mock .oto-adv-heading h1{font-size:28px;line-height:1.5}
+#oto-mock .oto-adv-heading>span,#oto-mock .oto-adv-progress,#oto-mock .oto-adv-review-badge{font-size:14px}
+#oto-mock .oto-adv-settings,#oto-mock .oto-adv-sources,#oto-mock .oto-adv-mini,#oto-mock .oto-adv-settings-grid label{font-size:15px;line-height:1.75}
+#oto-mock .oto-advanced summary{min-height:44px;display:list-item;align-content:center}
+#oto-mock .oto-adv-tabs button,#oto-mock .oto-adv-answers button,#oto-mock .oto-adv-note-picker button{font-size:16px;min-height:48px}
+#oto-mock .oto-adv-answers legend,#oto-mock .oto-adv-help,#oto-mock .oto-adv-selection,#oto-mock .oto-adv-feedback p,#oto-mock .oto-adv-chord-symbol span{font-size:16px;line-height:1.8}
+#oto-mock .oto-adv-note-picker small,#oto-mock .oto-adv-tone-list small{font-size:13px}
+#oto-mock .oto-adv-piano{height:175px}
+#oto-mock .oto-adv-piano .oto-black{height:105px;font-size:12px}
+#oto-mock .oto-adv-piano .oto-white{font-size:13px}
+#oto-mock .oto-app button:focus-visible,#oto-mock .oto-app summary:focus-visible,#oto-mock .oto-app select:focus-visible{outline:3px solid var(--p-green);outline-offset:3px}
+@media(hover:hover){#oto-mock .oto-option:not(:disabled):hover,#oto-mock .oto-secondary:not(:disabled):hover,#oto-mock .oto-tab:hover,#oto-mock .oto-basic-step:hover,#oto-mock .oto-modebar button:hover{background:var(--p-soft);border-color:var(--p-green)}#oto-mock .oto-link:hover{text-decoration:underline;text-underline-offset:4px}}
+@media(max-width:850px){#oto-mock .oto-study-grid,#oto-mock .oto-practice-grid{grid-template-columns:minmax(0,1fr)}#oto-mock .oto-basic-mini-path .oto-basic-step{font-size:13px}#oto-mock .oto-nav-btn{font-size:15px}#oto-mock .oto-practice-sidebar .oto-practice-path li{font-size:14px}}
+@media(max-width:600px){#oto-mock .oto-brand strong{font-size:20px}#oto-mock .oto-brand small{font-size:12px}#oto-mock .oto-title,#oto-mock [data-layout="guided"] .oto-title{font-size:24px}#oto-mock .oto-modebar button{font-size:14px;padding:9px 10px}#oto-mock .oto-nav-btn{font-size:14px;padding:10px 12px}#oto-mock .oto-chart-table{font-size:14px}#oto-mock .oto-chart-table button{font-size:15px}#oto-mock .oto-chart-example-head b{font-size:21px}#oto-mock .oto-adv-heading{flex-wrap:wrap;gap:7px}#oto-mock .oto-adv-heading h1{font-size:25px}#oto-mock .oto-adv-tabs button{font-size:14px;padding:9px 11px}#oto-mock .oto-adv-note-picker button{font-size:15px}#oto-mock .oto-adv-note-picker small{font-size:12px}#oto-mock .oto-reference-detail .oto-piano{height:116px}#oto-mock .oto-reference-detail .oto-black{height:70px}#oto-mock .oto-chat-row{gap:12px}}
