@@ -72,7 +72,7 @@
   area.querySelector('[data-adv-ref-sound]')?.addEventListener('click',()=>sound(T.voicing(T.chord(s.refRoot,s.refType),s.inversion),true));
   area.querySelectorAll('[data-adv-key]').forEach(b=>b.addEventListener('click',()=>sound([Number(b.dataset.advKey)])));
   area.querySelectorAll('[data-adv-inversion]').forEach(b=>b.addEventListener('click',()=>{s.inversion=Number(b.dataset.advInversion);render();}));
-  area.querySelector('[data-chat]')?.addEventListener('click',()=>{const q=question(),answer=q.topic==='interval'?(s.quality||'未選択')+(s.degree||'')+'度':s.selected.join('・')||'未回答';root.otoAskGPT('音楽理論のアドバンス練習をしています。説明は短く、必要な前提だけ補ってください。\n問題：'+(q.topic==='interval'?q.notes.map(n=>n.name).join(' → ')+'の単音程名':q.symbol+'の省略なしの構成音（綴りも区別）')+'\n私の回答：'+answer+'\n'+(s.checked?'正解：'+(q.answer||q.notes.map(n=>n.key).join('・')):'答え合わせ前です。答えをすぐに明かさず考え方を案内してください。')+'\n理解の確認は2問以内、一度に1問。区切りで学習画面に戻るか対話を続けるか確認してください。',area);});
+  area.querySelector('[data-chat]')?.addEventListener('click',()=>{root.otoOpenGPT(area);});
  }
  root.otoAdvanced=s;remember();if(s.active)activate();
 })();
