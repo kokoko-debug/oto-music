@@ -59,7 +59,7 @@
   function practicePath(q){
    const items=state.reviewId?[q]:questions();
    return '<ol class="oto-practice-path" aria-label="練習の項目一覧">'+items.map((item,i)=>{
-    const current=item.id===q.id,label=item.symbol?item.symbol+'（'+(item.symbol.endsWith('m')?'マイナー':'メジャー')+'）':item.semitone?item.choices[item.answer]:item.notes.map(n=>n[1]).join(' → ');
+    const current=item.id===q.id,label=item.symbol?item.symbol+'（'+(item.symbol.endsWith('m')?'マイナー':'メジャー')+'）':item.semitone?item.title.split('は、')[0]:item.notes.map(n=>n[1]).join(' → ');
     return '<li'+(current?' aria-current="step"':'')+'><span class="oto-practice-number">'+(i+1)+'</span><span>'+label+'</span>'+(current?'<small>いまここ</small>':state.correctIds.includes(item.id)?'<small>正解済み</small>':'')+'</li>';
    }).join('')+'</ol>';
   }
