@@ -50,6 +50,9 @@
 #oto-mock .oto-chord-table td,#oto-mock .oto-chord-table th{padding:10px 6px}
 #oto-mock .oto-chord-table th:first-child{width:auto;white-space:nowrap}
 #oto-mock .oto-chord-table th:last-child{width:auto}
+#oto-mock .oto-tone-word{display:inline-block;white-space:nowrap}
+#oto-mock .oto-chord-reference{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}
+@media(max-width:850px){#oto-mock .oto-chord-reference{grid-template-columns:minmax(0,1fr)}#oto-mock .oto-chord-reference .oto-reference-detail{grid-row:1}}
 #oto-mock .oto-chart-example-head b{font-size:23px;font-weight:600}
 #oto-mock .oto-chart-example-head span,#oto-mock .oto-example-title,#oto-mock .oto-ref-note,#oto-mock .oto-note-letters span,#oto-mock .oto-spelling-note{font-size:14px}
 #oto-mock .oto-chart-pair{font-size:26px;font-weight:600}
