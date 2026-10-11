@@ -58,3 +58,7 @@ const oldChord=run({page:'chord',step:1,selected:1,checked:true});
 assert.equal(oldChord.chordPick,'table');
 assert.deepEqual(oldChord.chordKeys,[]);
 console.log('PASS: legacy lesson migration, confirmed marks, current-format reload, independent answers, invalid saves.');
+
+const seventhSave=run({foundationVersion:2,page:'chord',mode:'chart',chordPick:'keyboard',chordFamily:'sevenths',chordTableRoot:'Eb',chordRef:'Ebm7(b5)',chordIdentity:'E♭m7(b5)',chordKeys:[61,63,66,69]});
+assert.equal(seventhSave.chordFamily,'sevenths');assert.equal(seventhSave.chordTableRoot,'Eb');assert.equal(seventhSave.chordRef,'Ebm7(b5)');assert.equal(seventhSave.chordIdentity,'E♭m7(b5)');
+assert.deepEqual(run(seventhSave),seventhSave,'Reload preserves the selected four-note chord and root.');

@@ -24,6 +24,8 @@ assert.ok(intervals.some(q=>q.notes[0].key==='C'&&q.notes[1].key==='Gb'&&q.answe
 assert.ok(intervals.some(q=>q.notes[0].key==='C#'&&q.notes[1].key==='Db'&&q.answer==='減2度'&&q.semi===0));
 const state={...T.defaults(),active:true,tab:'reference',drillTopic:'chord',checked:true,finished:true,seed:27,position:12,answered:4,correct:3,streak:2,best:3,selected:['C','Eb','Gb','Bbb'],wrong:['c:C:dim7'],reviewIds:['c:C:dim7'],review:true,refType:'dim7',inversion:3};
 assert.deepEqual(plain(T.restore(state)),plain(state));
+assert.equal(T.defaults().display,'staff');
+assert.deepEqual(plain(T.restore({...state,display:'names'})),plain(state),'Old display settings migrate without losing session progress.');
 const bad=T.restore({active:'true',level:'fake',group:'fake',degree:9,quality:'major',selected:['<script>','C','C'],wrong:['missing','c:C:dim7','c:C:dim7'],correct:10,answered:2});
 assert.equal(bad.active,false);assert.equal(bad.level,'chromatic');assert.equal(bad.degree,null);assert.deepEqual(plain(bad.selected),['C']);assert.deepEqual(plain(bad.wrong),['c:C:dim7']);assert.equal(bad.correct,2);
 assert.equal(T.findQuestion('bad'),null);assert.throws(()=>T.chord('C','bad'));assert.throws(()=>T.parseRoot('C<script>'));

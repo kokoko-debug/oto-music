@@ -8,9 +8,9 @@ const context={};
 vm.runInNewContext(source.slice(start,end)+';this.identify=identifyKeyboardChord;this.voice=chordVoicing;',context);
 const identify=context.identify;
 const pitch=label=>{
- const match=label.match(/^([A-G])(♯|♭)?$/);
+ const match=label.match(/^([A-G])(♯|♭|𝄫|𝄪)?$/);
  assert.ok(match,label);
- return ({C:0,D:2,E:4,F:5,G:7,A:9,B:11}[match[1]]+(match[2]==='♯'?1:match[2]==='♭'?-1:0)+12)%12;
+ return ({C:0,D:2,E:4,F:5,G:7,A:9,B:11}[match[1]]+(match[2]==='♯'?1:match[2]==='♭'?-1:match[2]==='𝄫'?-2:match[2]==='𝄪'?2:0)+12)%12;
 };
 let recognized=0;
 for(let root=0;root<12;root++)for(const minor of [false,true])for(let inversion=0;inversion<3;inversion++){
@@ -55,7 +55,7 @@ assert.equal(identify([67,72,75]).displaySymbol,'Cm/G');
 assert.equal(identify([61,64,68]).displaySymbol,'C♯m');
 assert.equal(identify([60,64,79]).displaySymbol,'C','Open voicing retains root position.');
 assert.equal(identify([64,67,72,76]).displaySymbol,'C/E','Doubling retains the bass and inversion.');
-assert.equal(identify([60,64,67,71]),null,'Seventh chords are outside this three-tone mode.');
+assert.equal(identify([60,64,67,71]).displayName,'Cメジャーセブンス');
 assert.equal(identify([60,63,66]),null,'Diminished triads are outside the current beginner scope.');
 assert.equal(identify([60,64,68]),null,'Augmented triads must not be mislabeled.');
 assert.equal(identify([60,72,64]),null,'Two distinct pitch classes do not form a triad.');
@@ -67,3 +67,34 @@ for(let a=60;a<=82;a++)for(let b=a+1;b<=83;b++)for(let c=b+1;c<=84;c++){
  checked++;
 }
 console.log(`PASS: ${recognized} triads/inversions, 216 voicing switches, all ${checked} three-key selections, spelling, doubling and open voicings.`);
+
+// Compare all keyboard seventh interpretations and inversion switches with the
+// independently tested, degree-spelled theory engine, including ambiguous dim7.
+const theoryContext={};vm.runInNewContext(fs.readFileSync(require('node:path').join(__dirname,'../src/theory.js'),'utf8'),theoryContext);
+const T=theoryContext.OtoTheory;
+let seventhCount=0;
+for(const root of T.roots)for(const type of T.types.filter(t=>t.group==='sevenths')){
+ const chord=T.chord(root,type.id),symbol=chord.symbol.replace(/^([A-G])b/,'$1♭').replace(/^([A-G])#/,'$1♯');
+ for(let inversion=0;inversion<4;inversion++){
+  const keys=Array.from(T.voicing(chord,inversion));
+  const q=identify(keys,symbol);
+  assert.ok(q,`${symbol} inversion ${inversion}`);
+  assert.equal(q.type,type.id);assert.equal(q.rootPc,chord.notes[0].midi%12);assert.equal(q.inversion,inversion);
+  assert.deepEqual(Array.from(q.tones,t=>t.pc),Array.from(chord.notes,n=>n.midi%12));
+  assert.deepEqual(Array.from(q.tones,t=>t.letter.replace(/♭/g,'b').replace(/♯/g,'#').replace(/𝄫/g,'bb').replace(/𝄪/g,'x')),Array.from(chord.notes,n=>n.key));
+  for(let target=0;target<4;target++){
+   const voiced=Array.from(context.voice(q,target)),changed=identify(voiced,symbol);
+   assert.equal(voiced.length,4);assert.ok(voiced.every(n=>n>=60&&n<=84));
+   assert.equal(changed.symbol,symbol);assert.equal(changed.inversion,target);
+  }
+  seventhCount++;
+ }
+}
+const dim=identify([60,63,66,69]);assert.equal(dim.alternatives.length,4);assert.equal(dim.symbol,'Cdim7');
+assert.equal(identify([63,66,69,72],'Cdim7').position,'第1転回形');
+assert.equal(identify([69,72,75,78],'Cdim7').position,'第3転回形');
+assert.equal(identify([60,63,66,69],'D♯dim7').symbol,'Cdim7','Unknown spelling cannot silently change the selected chord.');
+assert.equal(identify([60,64,67,71,76]).type,'maj7','Doubling is allowed.');
+assert.equal(identify([60,64,67,71,74]),null,'Five distinct pitches are outside the quick reference scope.');
+assert.deepEqual(Array.from(context.voice(dim,4)),[]);
+console.log(`PASS: ${seventhCount} seventh/root/inversion cases, 1344 inversion switches, correct double accidentals and ambiguous roots.`);
