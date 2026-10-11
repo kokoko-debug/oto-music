@@ -1,0 +1,62 @@
+#oto-mock .oto-advanced[hidden]{display:none}
+#oto-mock .oto-advanced{max-width:1050px;margin:auto;padding:8px 0 20px}
+#oto-mock .oto-advanced-nav{margin-top:18px;border-top:1px solid var(--p-line);border-radius:0;padding-top:18px}
+#oto-mock .oto-adv-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:20px}
+#oto-mock .oto-adv-heading h1{font-size:25px;margin:0}
+#oto-mock .oto-adv-heading>span{color:var(--p-muted);font-size:12px}
+#oto-mock .oto-adv-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+#oto-mock .oto-adv-tabs button,#oto-mock .oto-adv-answers button,#oto-mock .oto-adv-note-picker button{border:1px solid var(--p-line);border-radius:10px;background:var(--p-paper);padding:10px 15px;min-height:46px}
+#oto-mock .oto-advanced button[aria-pressed=true]{background:var(--p-soft);border-color:var(--p-green);color:var(--p-green);box-shadow:inset 0 0 0 1px var(--p-green)}
+#oto-mock .oto-adv-settings,#oto-mock .oto-adv-sources,#oto-mock .oto-adv-mini{border:1px solid var(--p-line);border-radius:12px;padding:13px 16px;background:var(--p-paper);margin:15px 0;color:var(--p-muted);font-size:13px}
+#oto-mock .oto-advanced summary{min-height:28px;color:var(--p-ink)}
+#oto-mock .oto-adv-settings-grid{display:flex;flex-wrap:wrap;gap:14px;margin:14px 0}
+#oto-mock .oto-adv-settings-grid label{display:grid;gap:6px;font-size:13px;flex:1 1 150px;min-width:0}
+#oto-mock .oto-advanced select{font:inherit;color:var(--p-ink);background:var(--p-paper);border:1px solid var(--p-line);border-radius:9px;padding:10px;width:100%;min-height:44px}
+#oto-mock .oto-advanced select:focus-visible{outline:3px solid var(--p-green)}
+#oto-mock .oto-adv-progress{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;color:var(--p-muted);font-size:13px;margin:20px 0}
+#oto-mock .oto-adv-question{padding:26px;background:var(--p-paper);border:1px solid var(--p-line);border-radius:16px;margin:22px 0}
+#oto-mock .oto-adv-pair{display:flex;justify-content:center;align-items:center;gap:28px}
+#oto-mock .oto-adv-pair span{display:grid;text-align:center}
+#oto-mock .oto-adv-pair b{font-size:32px}
+#oto-mock .oto-adv-pair small{font-size:15px;color:var(--p-muted)}
+#oto-mock .oto-adv-arrow{font-size:26px;color:var(--p-muted)}
+#oto-mock .oto-adv-staff{width:100%;max-width:470px;display:block;margin:auto;fill:var(--p-ink)}
+#oto-mock .oto-adv-staff line{stroke:var(--p-ink);stroke-width:1}
+#oto-mock .oto-adv-chord-symbol{display:grid;gap:5px;border-left:4px solid var(--p-green)}
+#oto-mock .oto-adv-chord-symbol strong{font-size:38px;line-height:1.4}
+#oto-mock .oto-adv-chord-symbol span{color:var(--p-muted);font-size:14px}
+#oto-mock .oto-adv-answers fieldset{border:0;margin:0 0 20px;padding:0}
+#oto-mock .oto-adv-answers legend{margin-bottom:10px;font-size:14px}
+#oto-mock .oto-adv-degree,#oto-mock .oto-adv-qualities{display:flex;flex-wrap:wrap;gap:8px}
+#oto-mock .oto-adv-degree button{flex:1 0 55px}
+#oto-mock .oto-adv-note-picker{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:7px;margin-top:16px}
+#oto-mock .oto-adv-note-picker button{padding:8px 2px;font-weight:600;min-width:0}
+#oto-mock .oto-adv-note-picker small{display:block;font-size:11px;font-weight:400;color:var(--p-muted)}
+#oto-mock .oto-adv-note-picker button.tone-wrong{background:var(--p-wrong-bg);color:var(--p-wrong);border-color:var(--p-wrong);box-shadow:none}
+#oto-mock .oto-adv-selection{font-size:14px;overflow-wrap:anywhere}
+#oto-mock .oto-adv-selection span{margin-left:12px;color:var(--p-muted);white-space:nowrap}
+#oto-mock .oto-adv-help{font-size:14px;color:var(--p-muted)}
+#oto-mock .oto-adv-feedback{border-radius:14px;padding:20px;background:var(--p-soft);margin:20px 0}
+#oto-mock .oto-adv-feedback.wrong{background:var(--p-wrong-bg)}
+#oto-mock .oto-adv-feedback h3{margin:0 0 8px;font-size:17px}
+#oto-mock .oto-adv-feedback>strong{font-size:23px;overflow-wrap:anywhere}
+#oto-mock .oto-adv-feedback p{font-size:14px;margin:10px 0 0}
+#oto-mock .oto-adv-actions{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin:18px 0}
+#oto-mock .oto-adv-tone-list{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0}
+#oto-mock .oto-adv-tone-list>span{flex:1 0 68px;background:var(--p-paper);padding:10px 14px;border:1px solid var(--p-line);border-radius:10px;display:grid;text-align:center}
+#oto-mock .oto-adv-tone-list b{font-size:22px}
+#oto-mock .oto-adv-tone-list small{font-size:12px;color:var(--p-muted)}
+#oto-mock .oto-adv-reference-result{background:var(--p-paper);border:1px solid var(--p-line);border-radius:16px;padding:22px}
+#oto-mock .oto-adv-reference-result h3{font-size:28px;margin:0}
+#oto-mock .oto-adv-reference-result h3 small{display:block;font-size:15px;font-weight:400;margin-top:5px}
+#oto-mock .oto-adv-piano-scroll{overflow-x:auto;margin:25px 0;overscroll-behavior-x:contain;padding-bottom:8px}
+#oto-mock .oto-adv-piano{min-width:790px;width:100%;height:175px;grid-template-columns:repeat(22,1fr)}
+#oto-mock .oto-adv-piano .oto-black{width:calc(100% / 22 * .68)}
+#oto-mock .oto-adv-piano .oto-white{font-size:12px;padding-left:0;padding-right:0}
+#oto-mock .oto-adv-piano .oto-black{font-size:11px}
+#oto-mock .oto-adv-review-start{display:flex;align-items:center;gap:20px;margin:24px 0}
+#oto-mock .oto-adv-review-start strong{font-size:30px}
+#oto-mock .oto-adv-review-badge{font-size:13px;color:var(--p-green);background:var(--p-soft);padding:10px;border-radius:9px}
+#oto-mock .oto-adv-sources{margin-top:32px}
+#oto-mock .oto-adv-sources a{color:var(--p-green)}
+@media(max-width:600px){#oto-mock .oto-adv-heading h1{font-size:22px}#oto-mock .oto-adv-tabs{gap:6px}#oto-mock .oto-adv-tabs button{font-size:12px;padding:8px 11px}#oto-mock .oto-adv-question{padding:20px 12px}#oto-mock .oto-adv-pair{gap:20px}#oto-mock .oto-adv-note-picker{gap:4px}#oto-mock .oto-adv-note-picker button{font-size:13px}#oto-mock .oto-adv-note-picker small{font-size:10px}#oto-mock .oto-adv-reference-result{padding:15px}#oto-mock .oto-adv-actions button{min-height:44px}#oto-mock .oto-advanced-nav{margin-top:0;border-top:0;padding-top:10px}}

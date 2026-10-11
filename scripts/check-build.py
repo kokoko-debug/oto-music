@@ -31,11 +31,12 @@ assert '{{' not in document
 assert not re.search(r'C:[\\/]|Users[\\/]|localhost:|127\.0\.0\.1:', document), 'Local-only configuration in public app'
 parser = Distribution()
 parser.feed(document)
-assert parser.scripts == 4
+assert parser.scripts == 6
 assert 'oto-mock' in parser.ids
 assert len(parser.ids) == len(set(parser.ids)), 'Duplicate static IDs'
 assert not parser.external, 'Distribution must run without external script/style dependencies'
 assert 'oto-learning-preview' in document
 assert 'data-chord-voicing' in document
+assert 'nav.dataset.advancedNav' in document
 assert set(p.name for p in (ROOT / 'dist').iterdir()) == {'index.html', '.nojekyll'}, 'Unexpected files in upload directory'
 print('PASS: complete static distribution, local-path isolation, storage key and no external dependencies.')
