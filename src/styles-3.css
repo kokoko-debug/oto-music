@@ -1,0 +1,15 @@
+#oto-mock .oto-practice-switch{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+#oto-mock .oto-practice-switch .active{background:var(--p-soft);border-color:var(--p-green);color:var(--p-green)}
+#oto-mock .oto-note-letters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px}
+#oto-mock .oto-note-letters span{display:flex;gap:7px;align-items:center;padding:6px 11px;border-radius:8px;background:var(--p-tint);font-size:13px}
+#oto-mock .oto-note-letters b{font-weight:600;color:var(--p-green)}
+#oto-mock .oto-chord-table td,#oto-mock .oto-chord-table th{padding:8px 4px}
+#oto-mock .oto-chord-table th:first-child{width:62px;color:var(--p-green)}
+#oto-mock .oto-chord-table th:last-child{width:80px}
+#oto-mock .oto-basic-step small{margin-left:auto;color:var(--p-green)}
+#oto-mock .oto-secondary,#oto-mock .oto-tab,#oto-mock .oto-link,#oto-mock .oto-close{min-height:44px}
+#oto-mock .oto-close{min-width:44px}
+#oto-mock .oto-subtitle,#oto-mock .oto-feedback p,#oto-mock .oto-hint,#oto-mock .oto-more,#oto-mock .oto-chart-caption{font-size:14px}
+#oto-mock .oto-app summary:focus-visible{outline:3px solid var(--p-green);outline-offset:3px;border-radius:4px}
+@media(max-width:600px){#oto-mock .oto-header{padding-right:19px}#oto-mock .oto-options{grid-template-columns:minmax(0,1fr)}#oto-mock .oto-modebar{justify-content:space-between}#oto-mock .oto-note-letters{gap:5px}#oto-mock .oto-note-letters span{padding:5px 8px}}
+@media(prefers-reduced-motion:reduce){#oto-mock *{scroll-behavior:auto!important}}

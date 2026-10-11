@@ -1,0 +1,52 @@
+ #oto-mock .oto-modebar{display:flex;gap:7px;margin:0 0 27px;border-bottom:1px solid var(--p-line);padding-bottom:11px}
+ #oto-mock .oto-modebar button{background:transparent;border:0;border-radius:9px;padding:9px 15px;min-height:44px;font-size:13px;white-space:nowrap;color:var(--p-muted)}
+ #oto-mock .oto-modebar button.active{background:var(--p-soft);color:var(--p-green);font-weight:600}
+ #oto-mock .oto-learning{max-width:780px;margin:auto}
+ #oto-mock .oto-learning .oto-subtitle{margin-bottom:19px}
+ #oto-mock .oto-basic-intro{margin:0 0 24px;font-size:14px;max-width:560px}
+ #oto-mock .oto-basic-intro strong{font-weight:600;color:var(--p-green)}
+ #oto-mock .oto-basic-path{display:grid;gap:7px}
+ #oto-mock .oto-basic-step{display:flex;align-items:center;gap:10px;border:0;background:transparent;border-radius:9px;padding:9px 8px;min-height:44px;text-align:left;font-size:12px}
+ #oto-mock .oto-basic-step.active{background:var(--p-paper);color:var(--p-green);font-weight:600}
+ #oto-mock .oto-basic-step span{width:24px;height:24px;flex-shrink:0;display:grid;place-items:center;border-radius:50%;background:var(--p-tint);font-size:11px}
+ #oto-mock .oto-basic-step.active span{background:var(--p-green);color:var(--p-on-green)}
+ #oto-mock .oto-guide .oto-basic-foot{margin:18px 0 0;padding-top:15px;border-top:1px solid var(--p-line);font-size:11px}
+ #oto-mock .oto-micro-title{margin:23px 0 10px;font-size:17px;font-weight:500}
+ #oto-mock .oto-example-title{display:block;font-size:12px;color:var(--p-muted);margin:0 0 9px;text-align:center}
+ #oto-mock .oto-count-example{display:flex;align-items:center;justify-content:center;gap:13px;padding:20px 0}
+ #oto-mock .oto-count-note{display:grid;justify-items:center;gap:5px}
+ #oto-mock .oto-count-note b{font-size:26px;font-weight:500}
+ #oto-mock .oto-count-note small{width:25px;height:25px;border-radius:50%;display:grid;place-items:center;background:var(--p-soft);color:var(--p-green);font-size:12px}
+ #oto-mock .oto-formula{display:flex;justify-content:center;align-items:center;gap:13px;flex-wrap:wrap;padding:26px 0;font-size:14px}
+ #oto-mock .oto-formula b{font-size:22px;font-weight:500;color:var(--p-green)}
+ #oto-mock .oto-inline-chart{margin:20px 0;background:var(--p-paper);border:1px solid var(--p-line);border-radius:12px;padding:0 16px}
+ #oto-mock .oto-inline-chart summary{padding:13px 0;min-height:46px;color:var(--p-green);font-size:13px}
+ #oto-mock .oto-inline-chart[open]{padding-bottom:16px}
+ #oto-mock .oto-inline-chart .oto-chart-caption{font-size:11px}
+ #oto-mock .oto-chart-table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums;margin-top:18px}
+ #oto-mock .oto-chart-table caption{display:table-caption;caption-side:top;text-align:left;margin:0;padding:0 0 8px}
+ #oto-mock .oto-chart-table th{font-weight:500;text-align:center;padding:10px 3px;color:var(--p-muted);border-bottom:1px solid var(--p-line)}
+ #oto-mock .oto-chart-table td{padding:5px 3px;text-align:center;border-bottom:1px solid var(--p-line);height:44px}
+ #oto-mock .oto-chart-table td:first-child{color:var(--p-green);font-weight:500}
+ #oto-mock .oto-chart-table button{border:0;background:transparent;padding:9px 6px;min-height:44px;min-width:52px;width:100%;border-radius:7px;font-size:14px}
+ #oto-mock .oto-chart-table button.active{background:var(--p-soft);color:var(--p-green);box-shadow:inset 0 0 0 1px var(--p-green)}
+ #oto-mock .oto-chart-table .oto-semi-number{font-size:16px;color:var(--p-ink)}
+ #oto-mock .oto-chart-caption{margin:13px 0 0;font-size:12px;color:var(--p-muted)}
+ #oto-mock .oto-chart-example{background:var(--p-paper);border:1px solid var(--p-line);border-radius:15px;padding:20px 22px}
+ #oto-mock .oto-chart-example-head{display:flex;align-items:baseline;justify-content:space-between;gap:9px;flex-wrap:wrap;margin-bottom:17px}
+ #oto-mock .oto-chart-example-head b{font-size:19px;font-weight:500;color:var(--p-green)}
+ #oto-mock .oto-chart-example-head span{font-size:13px;color:var(--p-muted)}
+ #oto-mock .oto-semi-ruler{display:grid;grid-template-columns:repeat(13,minmax(0,1fr));gap:2px;margin:12px 0 16px;font-variant-numeric:tabular-nums}
+ #oto-mock .oto-semi-ruler span{font-size:11px;text-align:center;background:var(--p-tint);padding:6px 0;border-radius:3px}
+ #oto-mock .oto-semi-ruler span.passed{background:var(--p-soft)}
+ #oto-mock .oto-semi-ruler span.current{background:var(--p-green);color:var(--p-on-green)}
+ #oto-mock .oto-ref-columns{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:25px;align-items:start}
+ #oto-mock .oto-ref-note{background:var(--p-soft);border-radius:13px;padding:19px;font-size:12px;color:var(--p-muted);margin-top:18px}
+ #oto-mock .oto-ref-note b{display:block;color:var(--p-ink);font-size:14px;margin-bottom:8px;font-weight:500}
+ #oto-mock .oto-ref-note p{margin:7px 0}
+ #oto-mock .oto-basic-mini-path{display:none}
+ #oto-mock.tablet .oto-study-grid,#oto-mock.tablet .oto-ref-columns{grid-template-columns:minmax(0,1fr)}
+ #oto-mock.tablet .oto-guide{display:none}
+ #oto-mock.tablet .oto-basic-mini-path{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:18px}
+ @media(max-width:850px){#oto-mock .oto-basic-mini-path{display:flex;gap:5px;flex-wrap:wrap;margin:0 0 18px}#oto-mock .oto-basic-mini-path .oto-basic-step{padding:7px 9px;background:var(--p-tint)}#oto-mock .oto-basic-mini-path .oto-basic-step.active{background:var(--p-soft)}#oto-mock .oto-ref-columns{grid-template-columns:minmax(0,1fr)}#oto-mock .oto-ref-note{margin-top:0}}
+ @media(max-width:600px){#oto-mock .oto-modebar{gap:3px;margin-bottom:23px}#oto-mock .oto-modebar button{padding:9px 10px;font-size:12px}#oto-mock .oto-basic-intro{font-size:13px}#oto-mock .oto-chart-example{padding:15px 12px}#oto-mock .oto-chart-table{font-size:12px}#oto-mock .oto-chart-table button{min-width:40px;padding:9px 3px}#oto-mock .oto-inline-chart{padding-left:10px;padding-right:10px}#oto-mock .oto-basic-mini-path .oto-basic-step{font-size:11px;padding:7px 6px;gap:5px}#oto-mock .oto-basic-mini-path .oto-basic-step span{width:20px;height:20px}}

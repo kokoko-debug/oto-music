@@ -1,0 +1,135 @@
+ #oto-mock{width:100%}
+ #oto-mock .oto-app{--p-bg:light-dark(#f8f7f3,#202723);--p-paper:light-dark(#ffffff,#29322c);--p-ink:light-dark(#24392e,#edf1e9);--p-muted:light-dark(#647368,#b4c0b5);--p-line:light-dark(#e2e6dc,#455147);--p-green:light-dark(#285640,#a6cdb1);--p-on-green:light-dark(#ffffff,#1d3425);--p-soft:light-dark(#edf3e9,#354637);--p-tint:light-dark(#f1f0e9,#30382f);--p-wrong:light-dark(#9a4737,#efb29f);--p-wrong-bg:light-dark(#fcf0e9,#49362f);background:var(--p-bg);color:var(--p-ink);font:16px/1.65 "Yu Gothic UI","Hiragino Sans","Meiryo",system-ui,sans-serif;min-height:830px;border:1px solid var(--p-line);border-radius:18px;overflow:clip}
+ #oto-mock .oto-app *{box-sizing:border-box}
+ #oto-mock :where(.oto-app button,.oto-app textarea){font:inherit;color:inherit}
+ #oto-mock .oto-app button:disabled{opacity:.48;cursor:default}
+ #oto-mock .oto-app button:focus-visible{outline:3px solid var(--p-green);outline-offset:3px}
+ #oto-mock .oto-header{min-height:86px;display:flex;align-items:center;justify-content:space-between;padding:20px 116px 20px 28px;border-bottom:1px solid var(--p-line);background:var(--p-paper);gap:18px}
+ #oto-mock .oto-brand{display:flex;gap:13px;align-items:center}
+ #oto-mock .oto-mark{width:39px;height:39px;border-radius:13px;background:var(--p-green);color:var(--p-on-green);display:grid;place-items:center;flex-shrink:0}
+ #oto-mock .oto-brand strong{display:block;font-size:20px;font-weight:600;letter-spacing:.08em}
+ #oto-mock .oto-brand small{display:block;color:var(--p-muted);font-size:11px;letter-spacing:.04em}
+ #oto-mock .oto-motto{color:var(--p-muted);font-size:12px;white-space:nowrap}
+ #oto-mock .oto-shell{display:grid;grid-template-columns:168px minmax(0,1fr);min-height:742px}
+ #oto-mock .oto-nav{padding:29px 15px;border-right:1px solid var(--p-line)}
+ #oto-mock .oto-nav>small{display:block;color:var(--p-muted);font-size:11px;margin:0 10px 14px}
+ #oto-mock .oto-nav-btn{width:100%;display:flex;align-items:center;gap:10px;min-height:45px;padding:10px 13px;margin:4px 0;border:0;background:transparent;border-radius:10px;text-align:left;font-size:14px;white-space:nowrap}
+ #oto-mock .oto-nav-btn.active{background:var(--p-soft);color:var(--p-green);font-weight:600}
+ #oto-mock .oto-nav-btn svg{width:17px;height:17px}
+ #oto-mock .oto-course{border-top:1px solid var(--p-line);margin:33px 9px 0;padding-top:18px}
+ #oto-mock .oto-course small{display:block;font-size:11px;color:var(--p-muted);margin:5px 0}
+ #oto-mock .oto-course b{font-size:13px;font-weight:500}
+ #oto-mock .oto-main{padding:30px 36px 34px;min-width:0}
+ #oto-mock .oto-content{max-width:680px;margin:auto}
+ #oto-mock .oto-topline{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:13px;color:var(--p-muted);font-size:12px}
+ #oto-mock .oto-topline b{color:var(--p-green);font-weight:500}
+ #oto-mock .oto-progress{height:4px;border-radius:5px;background:var(--p-line);margin-bottom:26px;overflow:hidden}
+ #oto-mock .oto-progress span{display:block;height:100%;background:var(--p-green);border-radius:5px}
+ #oto-mock .oto-overline{display:block;color:var(--p-green);font-size:11px;letter-spacing:.08em;margin-bottom:7px}
+ #oto-mock .oto-title{margin:0 0 8px;font-size:25px;line-height:1.5;font-weight:600;letter-spacing:.01em}
+ #oto-mock .oto-subtitle{font-size:13px;color:var(--p-muted);margin:0 0 22px}
+ #oto-mock .oto-question{background:var(--p-paper);border:1px solid var(--p-line);border-radius:17px;padding:17px 24px 19px}
+ #oto-mock .oto-tabs{display:flex;justify-content:center;gap:5px}
+ #oto-mock .oto-tab{border:0;background:transparent;padding:7px 15px;min-height:38px;font-size:12px;border-radius:8px;color:var(--p-muted);white-space:nowrap}
+ #oto-mock .oto-tab.active{color:var(--p-green);background:var(--p-soft);font-weight:500}
+ #oto-mock .oto-notation{min-height:147px;display:flex;align-items:center;justify-content:center}
+ #oto-mock .oto-notes{display:flex;justify-content:center;align-items:center;gap:26px;min-height:143px}
+ #oto-mock .oto-note{display:flex;flex-direction:column;align-items:center;min-width:58px}
+ #oto-mock .oto-note b{font-size:34px;line-height:1.3;font-family:Georgia,"Yu Mincho",serif;font-weight:500}
+ #oto-mock .oto-note small{font-size:13px;color:var(--p-muted);margin-top:4px}
+ #oto-mock .oto-arrow{color:var(--p-muted);font-size:22px}
+ #oto-mock .oto-play-row{display:flex;justify-content:center}
+ #oto-mock .oto-secondary{display:inline-flex;justify-content:center;align-items:center;gap:7px;min-height:40px;padding:8px 13px;border:1px solid var(--p-line);background:var(--p-paper);border-radius:9px;font-size:12px}
+ #oto-mock .oto-secondary svg,#oto-mock .oto-link svg{width:15px;height:15px}
+ #oto-mock .oto-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:20px 0 13px}
+ #oto-mock .oto-option{min-height:57px;border:1px solid var(--p-line);border-radius:12px;background:var(--p-paper);display:flex;align-items:center;gap:14px;padding:13px 16px;text-align:left;font-size:15px}
+ #oto-mock .oto-option small{color:var(--p-muted);font-size:11px;min-width:15px}
+ #oto-mock .oto-option.selected{border-color:var(--p-green);background:var(--p-soft);box-shadow:inset 0 0 0 1px var(--p-green)}
+ #oto-mock .oto-option.right{border-color:var(--p-green);background:var(--p-soft)}
+ #oto-mock .oto-option.wrong{border-color:var(--p-wrong);background:var(--p-wrong-bg)}
+ #oto-mock .oto-option:disabled{opacity:1}
+ #oto-mock .oto-actions{display:flex;gap:15px;align-items:center;justify-content:space-between;margin-top:17px;flex-wrap:wrap}
+ #oto-mock .oto-link{background:transparent;border:0;display:inline-flex;align-items:center;gap:6px;color:var(--p-muted);padding:8px 0;font-size:12px;min-height:40px}
+ #oto-mock .oto-primary{display:inline-flex;justify-content:center;align-items:center;gap:9px;background:var(--p-green);color:var(--p-on-green)!important;border:0;border-radius:10px;padding:12px 23px;min-height:46px;font-size:14px;font-weight:500}
+ #oto-mock .oto-primary svg{width:16px;height:16px}
+ #oto-mock .oto-hint{margin-top:12px;font-size:13px;background:var(--p-tint);border-radius:10px;padding:12px 15px}
+ #oto-mock .oto-feedback{margin-top:17px;padding:18px 20px;border-radius:12px;background:var(--p-soft)}
+ #oto-mock .oto-feedback[data-correct="false"]{background:var(--p-wrong-bg)}
+ #oto-mock .oto-feedback h3{display:flex;align-items:center;gap:8px;color:var(--p-green);font-size:16px;font-weight:600;margin:0 0 8px}
+ #oto-mock .oto-feedback[data-correct="false"] h3{color:var(--p-wrong)}
+ #oto-mock .oto-feedback p{margin:5px 0;font-size:13px}
+ #oto-mock .oto-feedback .oto-link{color:var(--p-ink);text-decoration:underline;text-underline-offset:4px}
+ #oto-mock .oto-more{border-top:1px solid var(--p-line);margin-top:10px;padding-top:9px;font-size:13px}
+ #oto-mock .oto-chat-row{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-top:20px;padding-top:17px;border-top:1px solid var(--p-line)}
+ #oto-mock .oto-chat-row span{font-size:11px;color:var(--p-muted)}
+ #oto-mock .oto-chat-row .oto-link{color:var(--p-green)}
+ #oto-mock .oto-review-list{display:grid;gap:12px}
+ #oto-mock .oto-review-item{background:var(--p-paper);border:1px solid var(--p-line);border-radius:14px;padding:20px;display:flex;justify-content:space-between;gap:18px;align-items:center}
+ #oto-mock .oto-review-item b{display:block;font-size:17px;font-weight:500}
+ #oto-mock .oto-review-item p{margin:5px 0 0;color:var(--p-muted);font-size:12px}
+ #oto-mock .oto-empty{padding:30px 22px;background:var(--p-paper);border:1px solid var(--p-line);border-radius:16px}
+ #oto-mock .oto-empty p{margin:5px 0;font-size:14px}
+ #oto-mock .oto-empty small{color:var(--p-muted);font-size:12px}
+ #oto-mock .oto-dialog{background:var(--p-paper);border:1px solid var(--p-line);border-radius:16px;padding:22px;margin-top:20px}
+ #oto-mock .oto-dialog-head{display:flex;justify-content:space-between;align-items:center;gap:10px}
+ #oto-mock .oto-dialog h3{margin:0;font-size:17px;font-weight:500}
+ #oto-mock .oto-dialog p{font-size:12px;color:var(--p-muted);margin:9px 0 12px}
+ #oto-mock .oto-dialog textarea{display:block;width:100%;min-height:188px;resize:vertical;padding:14px;color:var(--p-ink);background:var(--p-bg);border:1px solid var(--p-line);border-radius:9px;font-size:16px}
+ #oto-mock .oto-close{border:0;background:transparent;min-width:38px;min-height:38px;border-radius:8px}
+ #oto-mock .oto-toast{margin-top:12px;color:var(--p-muted);font-size:12px}
+ #oto-mock .oto-study-grid{display:grid;grid-template-columns:minmax(0,1fr) 202px;gap:20px}
+ #oto-mock .oto-guide{background:var(--p-soft);padding:21px 18px;border-radius:14px;align-self:start}
+ #oto-mock .oto-guide h3{font-size:14px;font-weight:600;margin:0 0 18px}
+ #oto-mock .oto-guide-step{display:flex;gap:8px;margin:17px 0 8px;align-items:flex-start}
+ #oto-mock .oto-guide-step em{width:23px;height:23px;flex-shrink:0;font-size:11px;background:var(--p-paper);border-radius:50%;display:grid;place-items:center;color:var(--p-green);font-style:normal}
+ #oto-mock .oto-guide-step b{font-size:12px;font-weight:500}
+ #oto-mock .oto-guide p{font-size:12px;margin:4px 0 0 31px;color:var(--p-muted)}
+ #oto-mock .oto-guide .oto-guide-foot{border-top:1px solid var(--p-line);margin:20px 0 0;padding-top:14px;font-size:11px}
+ #oto-mock [data-layout="guided"] .oto-content{max-width:780px}
+ #oto-mock [data-layout="guided"] .oto-main{padding-left:26px;padding-right:26px}
+ #oto-mock [data-layout="guided"] .oto-title{font-size:23px}
+ #oto-mock [data-layout="guided"] .oto-question{padding-left:16px;padding-right:16px}
+ #oto-mock [data-layout="guided"] .oto-options{gap:8px}
+ #oto-mock [data-layout="guided"] .oto-option{padding:12px 10px;gap:8px;font-size:14px}
+ #oto-mock .oto-piano{display:flex;height:128px;position:relative;width:100%;max-width:400px;margin:9px auto 10px;gap:3px}
+ #oto-mock .oto-white{display:flex;justify-content:center;align-items:flex-end;padding:0 0 9px;width:12.5%;background:light-dark(#fffef9,#e7e9dc);color:#29392d!important;border:1px solid var(--p-line);border-bottom:4px solid light-dark(#c8d1c4,#8b9b8c);border-radius:0 0 7px 7px;font-size:11px}
+ #oto-mock .oto-white.lit{background:light-dark(#c8dfbb,#b2d1a1);border-bottom-color:light-dark(#699566,#698a62)}
+ #oto-mock .oto-black{position:absolute;top:0;height:77px;width:8%;margin-left:-4%;border:0;border-bottom:4px solid #14281b;border-radius:0 0 5px 5px;background:#29362f;color:#f5f8ec!important;display:flex;justify-content:center;align-items:flex-end;padding:0 0 9px;font-size:11px}
+ #oto-mock .oto-black.lit{background:#597b49}
+ #oto-mock .oto-piano-caption{margin:4px 0 0;text-align:center;color:var(--p-muted);font-size:11px}
+ #oto-mock .oto-staff{display:block;width:100%;max-width:370px;height:145px;color:var(--p-ink)}
+ #oto-mock .oto-staff line{stroke:currentColor;stroke-width:1;opacity:.46}
+ #oto-mock .oto-staff ellipse{fill:currentColor}
+ #oto-mock .oto-staff text{fill:currentColor;font-family:"Segoe UI Symbol","Yu Mincho",serif}
+ #oto-mock.tablet .oto-app{max-width:768px;margin:auto;min-height:830px}
+ #oto-mock.tablet .oto-shell{display:block;min-height:742px}
+ #oto-mock.tablet .oto-nav{display:flex;gap:7px;padding:11px 22px;border-right:0;border-bottom:1px solid var(--p-line)}
+ #oto-mock.tablet .oto-nav>small,#oto-mock.tablet .oto-course{display:none}
+ #oto-mock.tablet .oto-nav-btn{width:auto;margin:0;padding:9px 17px}
+ #oto-mock.tablet .oto-main{padding:25px 32px 32px}
+ #oto-mock.tablet .oto-header{padding-right:110px}
+ #oto-mock.tablet .oto-motto,#oto-mock.tablet .oto-chat-only{display:none}
+ #oto-mock [hidden]{display:none!important}
+ @media(max-width:850px){#oto-mock .oto-study-grid{grid-template-columns:minmax(0,1fr)}#oto-mock .oto-guide,#oto-mock .oto-motto,#oto-mock .oto-course,#oto-mock .oto-nav>small,#oto-mock .oto-chat-only{display:none}#oto-mock .oto-shell{display:block}#oto-mock .oto-main{padding:25px 23px}#oto-mock .oto-nav{display:flex;gap:7px;padding:11px 22px;border-right:0;border-bottom:1px solid var(--p-line)}#oto-mock .oto-nav-btn{width:auto;margin:0;padding:9px 17px}}
+ @media(max-width:600px){#oto-mock .oto-app{border-radius:12px;min-height:830px}#oto-mock .oto-shell{display:block}#oto-mock .oto-header{padding:19px 95px 19px 19px}#oto-mock .oto-brand strong{font-size:17px}#oto-mock .oto-brand small{font-size:11px}#oto-mock .oto-brand{gap:9px}#oto-mock .oto-mark{width:33px;height:33px;border-radius:11px}#oto-mock .oto-nav{display:flex;padding:10px 13px;gap:5px;border-right:0;border-bottom:1px solid var(--p-line)}#oto-mock .oto-nav>small,#oto-mock .oto-course{display:none}#oto-mock .oto-nav-btn{width:auto;margin:0;min-height:44px;padding:9px 13px;font-size:13px}#oto-mock .oto-main,#oto-mock [data-layout="guided"] .oto-main,#oto-mock.tablet .oto-main{padding:22px 17px 26px}#oto-mock .oto-title,#oto-mock [data-layout="guided"] .oto-title{font-size:21px}#oto-mock .oto-question{padding:13px 14px 16px}#oto-mock .oto-option{font-size:14px;padding:12px 10px;gap:7px}#oto-mock .oto-primary{padding:12px 18px}#oto-mock .oto-chat-only{display:none}#oto-mock .oto-review-item{flex-wrap:wrap}#oto-mock.tablet .oto-nav{padding:10px 13px}#oto-mock.tablet .oto-nav-btn{padding:9px 13px}}
+
+#oto-mock .oto-interval-pick{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}
+#oto-mock .oto-interval-pick button{min-height:44px}
+#oto-mock .oto-interval-pick .active{background:var(--p-soft);border-color:var(--p-green);font-weight:600}
+#oto-mock .oto-spelling-note{font-size:11px}
+#oto-mock .oto-origin-choices{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+#oto-mock .oto-origin-choices button{min-height:44px;flex:1}
+#oto-mock .oto-origin-choices .active{background:var(--p-soft);border-color:var(--p-green);font-weight:600}
+#oto-mock .oto-origin-pair{display:flex;align-items:center;justify-content:center;gap:26px;margin:10px 0 18px}
+#oto-mock .oto-origin-pair>span:not(.oto-arrow){display:flex;flex-direction:column;align-items:center}
+#oto-mock .oto-origin-pair small{font-size:11px;color:var(--p-muted)}
+#oto-mock .oto-origin-pair b{font-size:27px;font-weight:600}
+#oto-mock .oto-piano .oto-origin-key{background:var(--p-green);color:var(--p-on-green)!important;border-color:var(--p-green)}
+#oto-mock .oto-piano .oto-target-key{background:var(--p-soft);color:var(--p-green)!important;border-color:var(--p-green)}
+#oto-mock .oto-white.oto-origin-key,#oto-mock .oto-white.oto-target-key{position:relative}
+#oto-mock .oto-key-role{position:absolute;bottom:31px;left:0;right:0;font-size:10px;font-weight:600}
+#oto-mock .oto-origin-ruler{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-radius:10px;background:var(--p-soft);padding:8px 0;margin-top:15px}
+#oto-mock .oto-origin-ruler span{display:flex;flex-direction:column;align-items:center;font-size:14px}
+#oto-mock .oto-origin-ruler small{font-size:10px;color:var(--p-muted);white-space:nowrap}
+#oto-mock .oto-origin-root{font-size:12px;line-height:1.7;border-top:1px solid var(--p-line);padding-top:12px;margin:14px 0 0}
+#oto-mock .oto-origin-root strong{font-weight:600;color:var(--p-green)}

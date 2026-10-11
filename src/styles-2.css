@@ -1,0 +1,46 @@
+#oto-mock .oto-chart-example-head.oto-chord-result{display:block;background:var(--p-soft);border-left:4px solid var(--p-green);border-radius:10px;padding:14px 16px;margin-bottom:20px}
+#oto-mock .oto-chord-result-title{margin:0;line-height:1.4;color:var(--p-green);font-weight:600}
+#oto-mock .oto-chord-result-title strong{font-size:32px;font-weight:700;white-space:nowrap}
+#oto-mock .oto-chord-result-title .oto-chord-result-position{font-size:22px;font-weight:600;color:var(--p-green);white-space:nowrap}
+@media(max-width:600px){#oto-mock .oto-chart-example-head.oto-chord-result{padding:12px 10px}#oto-mock .oto-chord-result-title strong{font-size:26px}#oto-mock .oto-chord-result-title .oto-chord-result-position{font-size:18px}}
+#oto-mock .oto-chord-workspace{max-width:820px;margin:auto;min-width:0}
+#oto-mock .oto-reference-grid.oto-keyboard-only{grid-template-columns:minmax(0,1fr);max-width:650px;margin:auto}
+#oto-mock .oto-keyboard-only .oto-reference-detail{position:static}
+#oto-mock .oto-chord-keyboard-scroll{overflow-x:auto;overscroll-behavior-x:contain;padding:3px 0 8px;margin:12px 0 0;scrollbar-width:thin}
+#oto-mock .oto-chord-keyboard-scroll:focus-visible{outline:2px solid var(--p-green);outline-offset:2px}
+#oto-mock .oto-piano.oto-chord-piano{height:148px;min-width:660px;width:100%;max-width:none;margin:0;gap:2px}
+#oto-mock .oto-chord-piano .oto-white{width:6.6667%;position:relative;font-size:11px}
+#oto-mock .oto-chord-piano .oto-black{height:90px;width:4.6%;margin-left:-2.3%;font-size:10px}
+#oto-mock .oto-chord-piano .oto-chord-root{background:var(--p-green);color:var(--p-on-green)!important}
+#oto-mock .oto-chord-piano .oto-chord-bass{background:var(--p-soft);color:var(--p-green)!important;border:1px solid var(--p-green)}
+#oto-mock .oto-chord-piano .oto-key-role{font-size:9px;bottom:30px}
+#oto-mock .oto-octave-caption{display:flex;justify-content:space-between;font-size:11px;color:var(--p-muted);margin-top:4px}
+#oto-mock .oto-chord-scroll-help{display:none}
+#oto-mock .oto-chord-identity{display:flex;gap:12px;margin:16px 0}
+#oto-mock .oto-chord-identity span{flex:1;background:var(--p-soft);padding:10px 14px;border-radius:10px}
+#oto-mock .oto-chord-identity small{display:block;font-size:11px;color:var(--p-muted)}
+#oto-mock .oto-chord-identity b{font-size:19px;font-weight:600}
+#oto-mock .oto-key-root-reading{display:block;font-size:7px;line-height:1.1}
+#oto-mock .oto-chord-piano .oto-key-role{line-height:1.15}
+#oto-mock .oto-voicing-button[aria-pressed="true"]{background:var(--p-soft);border-color:var(--p-green);font-weight:600}
+#oto-mock .oto-chord-key-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+#oto-mock .oto-chord-key-actions button{min-height:44px}
+@media(max-width:850px){#oto-mock .oto-chord-scroll-help{display:block}#oto-mock .oto-chord-workspace .oto-chart-example{padding:16px 12px}}
+#oto-mock .oto-reference-grid{display:grid;grid-template-columns:minmax(245px,.9fr) minmax(0,1.1fr);gap:24px;align-items:start}
+#oto-mock .oto-reference-table .oto-chart-table{margin-top:0}
+#oto-mock .oto-reference-table .oto-chart-table th{padding:6px}
+#oto-mock .oto-reference-table .oto-chart-table td{padding:2px}
+#oto-mock .oto-reference-table .oto-chart-table button{padding:6px;min-width:40px}
+#oto-mock .oto-reference-detail .oto-chart-example{padding:18px 16px}
+#oto-mock .oto-reference-detail{position:sticky;top:16px;background:var(--p-bg)}
+#oto-mock .oto-reference-detail .oto-chart-example-head{margin-bottom:8px}
+#oto-mock .oto-chart-pair{font-size:23px;margin-bottom:16px;font-weight:500}
+#oto-mock .oto-chart-pair span{color:var(--p-muted);padding:0 8px}
+#oto-mock .oto-reference-detail .oto-piano{margin:0;width:100%}
+#oto-mock .oto-ref-reading{border-top:1px solid var(--p-line);margin-top:16px;padding-top:14px;font-size:13px;line-height:1.7}
+#oto-mock .oto-ref-reading b{font-weight:500}
+#oto-mock .oto-ref-reading p{margin:6px 0 0}
+#oto-mock .oto-gpt-status{font-size:13px;line-height:1.7;margin-top:12px;color:var(--p-muted)}
+#oto-mock .oto-gpt-setup{font-size:13px;line-height:1.7}
+@media(pointer:fine){#oto-mock:not(.tablet) .oto-chat-row.oto-chat-only{display:flex;flex-wrap:wrap;gap:8px}#oto-mock:not(.tablet) .oto-gpt-message.oto-chat-only{display:block}}
+@media(max-width:620px){#oto-mock .oto-reference-grid{grid-template-columns:minmax(0,1fr);gap:18px}#oto-mock .oto-reference-detail{grid-row:1;top:8px;z-index:2}#oto-mock .oto-reference-detail>p{display:none}#oto-mock .oto-reference-detail .oto-piano{height:95px}#oto-mock .oto-reference-detail .oto-black{height:57px}#oto-mock .oto-chart-pair{margin-bottom:9px;font-size:19px}#oto-mock .oto-reference-detail .oto-chart-example{padding:12px}#oto-mock .oto-reference-detail .oto-chart-caption{margin:7px 0 0}}
