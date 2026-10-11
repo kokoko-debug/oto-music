@@ -28,7 +28,7 @@ python -m http.server 8766 --bind 127.0.0.1 --directory dist
 - `layout.html`、`styles-*.css`：画面構成とスタイル。
 
 ビルド後は単独のHTMLで動くため、外部ライブラリの読み込みやAPI料金は不要です。
-全169組の音程・全72通りの三和音／転回形・2,300通りの3鍵選択・全216通りの三和音転回切り替え・全336通りのセブンス／転回形・1,344通りの転回切り替え・問題14問・保存の復元を自動検査します。
+全169組の音程・全72通りの三和音／転回形・2,300通りの3鍵選択・全216通りの三和音転回切り替え・全336通りのセブンス／転回形・1,344通りの転回切り替え・入門の問題340問・保存の復元を自動検査します。
 さらに1,600通りの綴り付き単音程と、37種類×全12音のコード444通り、セブンスの転回形、厳密な音名判定、反復順とアドバンスの保存値も検査します。
 
 ## アドバンス
@@ -42,7 +42,7 @@ python -m http.server 8766 --bind 127.0.0.1 --directory dist
 
 問題では「省略なしの構成音」を回答し、順番・オクターブは問いません。異名同音の綴りは区別します。9・11・13は下位の7・9・11を含む教材上の積み重ねです。実演では5度や11度などを省くことがありますが、この問題にはその省略を適用しません。`7(#11)`など7に個別指定した音は、その指定だけを追加します。`add9`に7度は含めず、`sus`は3度を置き換えます。アプリ内の「出題ルールと参考教材」でも確認できます。
 
-音程・セブンスの規則は[University of Puget Soundの音楽理論教材](https://musictheory.pugetsound.edu/mt21c/AugmentedAndDiminishedIntervals.html)、[Seventh Chords](https://musictheory.pugetsound.edu/mt21c/SeventhChords.html)で確認し、テンション・add・susは[Open Music TheoryのChord Symbols](https://viva.pressbooks.pub/openmusictheory/chapter/chord-symbols/)を参照しています。説明・問題は本アプリ用の独自作成です。
+音程・セブンスの規則は[University of Puget Soundの音楽理論教材](https://musictheory.pugetsound.edu/mt21c/AugmentedAndDiminishedIntervals.html)、[Seventh Chords](https://musictheory.pugetsound.edu/mt21c/SeventhChordsIntroduction.html)で確認し、テンション・add・susは[Open Music TheoryのChord Symbols](https://viva.pressbooks.pub/openmusictheory/chapter/chord-symbols/)を参照しています。説明・問題は本アプリ用の独自作成です。
 
 ## GitHub Pagesで無料公開する
 
@@ -68,3 +68,13 @@ URLにはアクセス制限がありません。独自ドメインは不要で�
 - 初版のiPad実機での操作と音の再生は、ユーザーから確認OKの報告を受けています。アドバンスの追加後の表示と操作は別途検証します。
 
 今後は問題の種類を増やし、入門順の出題と復習を充実させます。画面の基本の操作感は引き継ぎます。
+
+
+## 入門練習を広げる
+
+- 音程：長・短・完全の2音問題84問と、音程名→半音数12問。増・減の2音問題98問と、音程名→半音数14問。Cで確認する範囲と、基準の音を変える範囲を選べます。
+- コード：基本の三和音24問、増・減三和音24問、7種類のセブンス×12ルートで84問。Cだけで仕組みを確認する範囲も選べます。
+- 4択から構成音を選び、短い解説・ヒント・その範囲の早見表を確認。間違えた問題は復習に残ります。長い練習は現在の問題と前後を表示し、全項目一覧は必要なときに開けます。
+- 範囲を解き終えると次の範囲へ進めます。4和音と増・減音程の先は、アドバンスの記述式に近い構成音選択・重増重減・テンションへ進みます。
+
+増減三和音の定義は [University of Puget Sound — Triads](https://musictheory.pugetsound.edu/mt21c/TriadsIntroduction.html) で照合。増減音程とセブンスは既記の教材で確認しています。問題・解説は独自作成です。

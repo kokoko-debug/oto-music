@@ -60,3 +60,18 @@
  #oto-mock .oto-practice-location{white-space:nowrap;color:var(--p-green)}
  #oto-mock .oto-content .oto-topline{flex-wrap:wrap;gap:8px}
  @media(max-width:600px){#oto-mock .oto-practice-path{gap:6px;margin-bottom:18px}#oto-mock .oto-practice-path li{padding:7px 9px;font-size:11px;gap:6px}}
+
+ #oto-mock .oto-practice-course{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+ #oto-mock .oto-practice-course button{min-height:44px;font-size:13px}
+ #oto-mock .oto-practice-course [aria-pressed="true"]{background:var(--p-soft);border-color:var(--p-green);color:var(--p-green);font-weight:600}
+ #oto-mock .oto-practice-roots{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+ #oto-mock .oto-practice-roots button{padding:8px 10px;min-height:44px;font-size:12px;border-radius:8px}
+ #oto-mock .oto-practice-roots [aria-pressed="true"]{background:var(--p-tint);font-weight:600}
+ #oto-mock .oto-practice-all{margin:-10px 0 24px;font-size:12px;color:var(--p-muted)}
+ #oto-mock .oto-practice-all summary{min-height:44px;padding:10px 0;cursor:pointer}
+ #oto-mock .oto-practice-all .oto-practice-path{margin:10px 0 0}
+ #oto-mock .oto-practice-concept{font-size:13px;border:1px solid var(--p-line);border-radius:10px;background:var(--p-soft);padding:0 14px;margin:0 0 20px}
+ #oto-mock .oto-practice-concept summary{min-height:44px;padding:10px 0;color:var(--p-green);cursor:pointer}
+ #oto-mock .oto-practice-concept p{margin:0 0 12px}
+ #oto-mock .oto-practice-piano-scroll{width:100%;overflow-x:auto;padding:0 0 8px}
+ #oto-mock .oto-practice-wide-piano{min-width:680px;max-width:none}
