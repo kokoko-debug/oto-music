@@ -59,4 +59,5 @@
 #oto-mock .oto-adv-review-badge{font-size:13px;color:var(--p-green);background:var(--p-soft);padding:10px;border-radius:9px}
 #oto-mock .oto-adv-sources{margin-top:32px}
 #oto-mock .oto-adv-sources a{color:var(--p-green)}
-@media(max-width:600px){#oto-mock .oto-adv-heading h1{font-size:22px}#oto-mock .oto-adv-tabs{gap:6px}#oto-mock .oto-adv-tabs button{font-size:12px;padding:8px 11px}#oto-mock .oto-adv-question{padding:20px 12px}#oto-mock .oto-adv-pair{gap:20px}#oto-mock .oto-adv-note-picker{gap:4px}#oto-mock .oto-adv-note-picker button{font-size:13px}#oto-mock .oto-adv-note-picker small{font-size:10px}#oto-mock .oto-adv-reference-result{padding:15px}#oto-mock .oto-adv-actions button{min-height:44px}#oto-mock .oto-advanced-nav{margin-top:0;border-top:0;padding-top:10px}}
+@media(max-width:850px){#oto-mock .oto-advanced-nav{margin-top:0;border-top:0;padding-top:9px}}
+@media(max-width:600px){#oto-mock .oto-adv-heading h1{font-size:22px}#oto-mock .oto-adv-tabs{gap:6px}#oto-mock .oto-adv-tabs button{font-size:12px;padding:8px 11px}#oto-mock .oto-adv-question{padding:20px 12px}#oto-mock .oto-adv-pair{gap:20px}#oto-mock .oto-adv-note-picker{gap:4px}#oto-mock .oto-adv-note-picker button{font-size:13px}#oto-mock .oto-adv-note-picker small{font-size:10px}#oto-mock .oto-adv-reference-result{padding:15px}#oto-mock .oto-adv-actions button{min-height:44px}}
